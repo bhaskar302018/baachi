@@ -1,0 +1,8 @@
+node{
+    stage(scm){
+    git clone 'https://github.com/spring-projects/baachi.git'
+   }
+ stage('build'){
+    sh 'mvn clean package'
+  }
+}
